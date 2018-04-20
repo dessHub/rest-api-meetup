@@ -13,6 +13,9 @@
  app.use(bodyParser.json());
  const port = process.env.PORT || 8000;
 
+ // set the view engine to ejs
+ app.set('view engine', 'ejs');
+
  // all other code will go here 
  app.use(router);
 
